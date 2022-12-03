@@ -13,15 +13,18 @@ if (num < 100)
 {    
     Console.WriteLine("Третьей цифры нет");
 }
-if (num > 999)
+while (num >= 100)
 {
+    if (num > 999)
+    {
     num = num / 10;
     result = num % 10;
     Console.WriteLine(result);
-}
-if (num >= 100 && num <= 999)
-{   
-    num = num / 10;
+    break;
+    }  
     result = num % 10;
     Console.WriteLine(result);
+    break;
 }
+
+    
